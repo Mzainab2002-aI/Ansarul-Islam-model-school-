@@ -1,0 +1,59 @@
+<html> 
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/style.css" rel="stylesheet">
+        <title>Welcome to my website </title>
+    </head>
+    <body> 
+        <img src="images/Logo.jpg" width="100%" ;>
+        <hr>
+        <ul>
+            <li> 
+                <a href="#">Home </a>
+            </li>
+            <li><a href="switc.html">About</a></li>
+            <li><a href="#">course</a></li>
+            <li><a href="#">Student</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+        <hr>
+        <h1 id="about">About</h1>
+        <p> 
+<b> HTML </b>bookmarks are used to allow readers to jump to specific parts of a webpage. Bookmarks 
+can be useful if your page is very long. To use a bookmark, you must first create it, and then 
+add a link to it. Then, when the link is clicked, the page will scroll to the location with the 
+bookmark.
+</p>
+<button onclick="return showImage();"> Show Image</button>
+ <button onclick="return hideImage();">Hide Image</button>
+
+ <img src="images/Logo.jpg" width="300" height="250" id="logo"; >
+     <hr> 
+        <div style="background-color:rgb(70, 17, 17);color: white;padding: 10px;">
+            <h2>london</h2>
+            <p> London is the capital city of england.
+                it is the most populus city in the united kindom,
+            </p>
+        </div>
+        <span>Hello world</span>
+    </body>
+</html>
+
+<script> 
+function displayresult()
+ {
+    document. getElementById ("about"). innerHTML = "have a nice day!";
+    document. getElementById ("about"). style.fontSize="50px;"
+    document. getElementById ("about"). style.color="red";
+}
+function showimage()
+{
+ document.getElementById("logo"). src ="images/logo.jpg";
+ document.getElementById("logo").style.width=400;
+}
+function hideImage()
+{
+ alert("Congratulations. You have successfully hide the image")
+ document.getElementById("logo").style.display = "none";
+}
+</script>
